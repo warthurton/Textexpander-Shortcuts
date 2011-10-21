@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Network</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>;myip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-04T18:55:43Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>My IP</string>
+			<key>lastUsed</key>
+			<date>2011-08-11T22:32:27Z</date>
+			<key>modificationDate</key>
+			<date>2011-08-04T19:24:49Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+active_interface=`netstat -rn | grep 'default' | awk '{print $6}'`
+ifconfig | grep -A 1 $active_interface | grep 'inet ' | awk '{printf $2}'</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>F06BCA47-5EA5-488E-A27A-A9C05E67550F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>;pubip</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-04T18:52:30Z</date>
+			<key>flags</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Public IP</string>
+			<key>lastUsed</key>
+			<date>2011-08-04T22:26:04Z</date>
+			<key>modificationDate</key>
+			<date>2011-08-04T22:25:56Z</date>
+			<key>plainText</key>
+			<string>#!/bin/bash
+#curl -s http://automation.whatismyip.com/n09230945.asp
+curl -s -m1 http://whatismyip.org</string>
+			<key>snippetType</key>
+			<integer>3</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>89243481-3B4E-43E0-9B96-418AF1C2BC8A</string>
+		</dict>
+	</array>
+</dict>
+</plist>
